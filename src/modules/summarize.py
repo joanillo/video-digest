@@ -1,4 +1,4 @@
-"""funció analize_apis()"""
+"""function summarize()"""
 import os
 import subprocess
 
@@ -8,13 +8,12 @@ from datetime import datetime
 from modules.prompt import get_prompt
 from modules.response_test import get_response_test
 from modules.models import get_models
-from modules.utils import netejar_markdown
+from modules.utils import clean_markdown
 from modules.audio import generate_audio
 
 def summarize(prompt_file: str, context_file: str, transcript_file: str, api: str, audio: str) -> None:
 	"""
-	Analitza el resultat narratiu de les diferents APIs a partir del prompt que s'especifica.
-	Genera un markdown i un pdf per cada api analitzada.
+	Summarizes transcript_file asking to an LLM with a prompt.
 
 	Arguments:
 	-prompt_file (str)
@@ -193,7 +192,7 @@ def summarize(prompt_file: str, context_file: str, transcript_file: str, api: st
 		with open(f"output/output_{timestamp}_{api}.md", "w", encoding="utf-8") as f:
 			f.write(content)
 		
-		text = netejar_markdown(content)
+		text = clean_markdown(content)
 		print(text)
 
 		with open(f"output/output_{timestamp}_{api}.txt", "w", encoding="utf-8") as f:

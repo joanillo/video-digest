@@ -4,7 +4,7 @@ import edge_tts
 
 def generate_audio(text: str, audio: str, file: str) -> None:
 	"""
-	Genera el mp3 amb l'idioma especificat.
+	Generates mp3 file in the language specified.
 
 	Arguments:
 	-text (str): text content

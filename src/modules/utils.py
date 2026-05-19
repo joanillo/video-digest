@@ -1,12 +1,12 @@
-"""funcions útils"""
+"""util funcions"""
 import re
 
-def netejar_markdown(text):
+def clean_markdown(text):
 	"""
-	Neteja el markdown a text pelat
+	cleans markdown format to plain text
 
 	Arguments:
-	-text (str): text en format markdown
+	-text (str): text in markdown format
 
 	Returns:
 	plain text (str)

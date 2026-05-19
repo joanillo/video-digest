@@ -1,14 +1,14 @@
-"""funció get_models()"""
+"""function get_models()"""
 def get_models(api: str) -> str:
 	"""
-	Retorna el model que farem servir per cada API
-	Aquest és el fitxer que s'ha d'editar si volem probar altres models
+	Returns the AI model that we are going to use for the specified LLM API Key.
+	Edit this file to test other models
 
 	Arguments:
-	api (str): la api que estem provant
+	api (str): The LLM that we are testing
 
 	Returns:
-	str: el model associat a la API
+	str: model related with the LLM that we are testing.
 	"""
 	model = None
 	if api == "openai":
