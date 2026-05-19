@@ -4,7 +4,7 @@ venv/
 llegir.txt
 llegir2.txt
 
-src/input/
+src/input/*
 !src/input/jose_luis_cava_context_ca.txt
 !src/input/jose_luis_cava_context_es.txt
 !src/input/jose_luis_cava_context_en.txt
@@ -13,7 +13,7 @@ src/input/
 !src/input/prompt_es.txt
 !src/input/jose_luis_cava_video_260512.txt
 
-src/output/
+src/output/*
 !src/output/output_260518_234646_deepseek.mp3
 !src/output/output_260518_234646_deepseek.pdf
 !src/output/output_260518_234646_deepseek.txt
