@@ -2,8 +2,8 @@
 *.*~
 llegir.txt
 llegir2.txt
-output/*
-input/*
+src/output/*
+src/input/*
 src/prova_TTS/
 venv/
 
