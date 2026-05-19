@@ -16,12 +16,16 @@ def get_prompt(prompt_file: str, context_file: str, transcript_file: str) -> str
 	with open(prompt_file, "r", encoding="utf-8") as f:
 			prompt = f.read()
 
-	with open(context_file, "r", encoding="utf-8") as f:
-			context = f.read()
+	if context_file:
+		with open(context_file, "r", encoding="utf-8") as f:
+				context = f.read()
 
 	with open(transcript_file, "r", encoding="utf-8") as f:
 			transcript = f.read()
 
-	prompt = prompt.replace("{context}", context).replace("{transcript}", transcript)
+	if context_file:
+		prompt = prompt.replace("{context}", context).replace("{transcript}", transcript)
+	else:
+		prompt = prompt.replace("{transcript}", transcript)
 
 	return prompt

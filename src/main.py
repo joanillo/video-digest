@@ -26,7 +26,7 @@ if __name__ == "__main__":
 	parser.add_argument(
 		"--context_file",
 		type=str,
-		required=True,
+		required=False,
 		help=(
 				"context file.\n"
 				"Context of the video author\n"
