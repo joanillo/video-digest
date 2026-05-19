@@ -62,10 +62,10 @@ $ python main.py --help
 ```
 
 ```
-$ python3 main.py --prompt_file=input/prompt_en.txt --context_file=input/context_file_en.txt --transcript_file=input/transcript_video.txt --api=openai --audio=en
+$ python main.py --prompt_file=input/prompt_en.txt --context_file=input/context_file_en.txt --transcript_file=input/transcript_video.txt --api=openai --audio=en
 ```
 
-If you doesn't specify *--audio* argument, the mp3 is not generatd. You can use *en* (English), *ca* (Catalan) or *es* (Spanish), but you can extend languages esasily changing the source code.
+If you don't specify *--audio* argument, the mp3 is not generatd. You can use *en* (English), *ca* (Catalan) or *es* (Spanish), but you can extend languages esasily changing the source code.
 We use *edge-tts* to genertate the audio file.
 
 ## Projecte structure
