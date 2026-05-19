@@ -1,0 +1,9 @@
+.env
+*.*~
+llegir.txt
+llegir2.txt
+output/*
+input/*
+src/prova_TTS/
+venv/
+

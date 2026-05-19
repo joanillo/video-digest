@@ -1,0 +1,17 @@
+Te voy a pasar una transcripción de un video de Youtube, y quiero que me hagas un resumen/síntesis del vídeo con las ideas principales.
+El resumen constará de dos partes:
+La primera parte un resumen de unas 500 palabras con las ideas principales, sin bullets ni apartados.
+La segunda parte me vuelves a poner las ideas principales, pero ya de forma esquemática y en forma de guión (300 palabras como mucho).
+El formato de salida tiene que ser texto en formato markdown (puedes subrallar en negrita las frases o palabras que consideres más importantes).
+La salida tiene que seguir el siguiente esquema:
+
+# **Resumen**
+...
+# **Esquema**
+...
+
+Primero de todo te voy a a dar el contexto del autor del video y las temáticas que trata. Luego te voy a dar la transcripción del video en su idioma original.
+
+El contexto del autor del video: {context}
+
+La transcripción del video: {transcript}
