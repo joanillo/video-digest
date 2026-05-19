@@ -204,6 +204,6 @@ def summarize(prompt_file: str, context_file: str, transcript_file: str, api: st
 				check=True
 		)
 
-	if audio:
-		print("\ngenerating mp3 audio file...")
-		generate_audio(text, audio, f"output/output_{timestamp}_{api}.mp3")
+		if audio:
+			print("\ngenerating mp3 audio file...")
+			generate_audio(text, audio, f"output/output_{timestamp}_{api}.mp3")
